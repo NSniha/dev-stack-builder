@@ -1,10 +1,18 @@
+import Navbar from "./components/layout/Navbar";
+
 const App = () => {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-950">
-      <h1 className="text-4xl font-bold text-white">
-        Dev Stack Builder
-      </h1>
-    </main>
+    <>
+      <Navbar />
+
+      <main>
+        <section id="home"></section>
+        <section id="technologies"></section>
+        <section id="projects"></section>
+        <section id="about"></section>
+        <section id="contact"></section>
+      </main>
+    </>
   );
 };
 

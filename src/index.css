@@ -1,21 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
 :root {
   --font-inter: "Inter", sans-serif;
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
 
-  --brand-gradient: linear-gradient(
-    135deg,
-    #8b5cf6 0%,
-    #d946ef 48%,
-    #ec167a 100%
-  );
+  --brand-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 48%, #e51676 100%);
 
   --brand-pink: #e51676;
   --text-primary: #18223b;
   --text-secondary: #3f4b63;
   --border-color: #edf0f4;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -27,7 +26,6 @@ body {
   min-width: 320px;
   background: #ffffff;
   color: var(--text-primary);
-  font-family: var(--font-inter);
 }
 
 button,
