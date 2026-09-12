@@ -33,15 +33,15 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#edf0f4] bg-white">
-      <nav className="mx-auto flex h-14 max-w-[1216px] items-center px-3 sm:px-5 md:h-20 md:px-6 xl:px-0" aria-label="Main navigation">
+      <nav className="mx-auto flex h-14 max-w-304 items-center px-3 sm:px-5 md:h-20 md:px-6 xl:px-0" aria-label="Main navigation">
 
         {/* ================= Desktop Navbar =================== */}
         <div className="hidden w-full items-center justify-between md:flex">
           <a href="#home" onClick={() => handleNavClick("Home")} className="flex shrink-0 items-center" aria-label="Dev Stack home">
-            <img src={logo} alt="Dev Stack" className="block h-auto w-[136px] object-contain" />
+            <img src={logo} alt="Dev Stack" className="block h-auto w-34 object-contain" />
           </a>
 
-          <ul className="flex items-center gap-[30px] lg:gap-[31px]">
+          <ul className="flex items-center gap-7.5 lg:gap-7.75">
             {navLinks.map((link) => (
               <li key={link.id}>
                 <a href={link.href} onClick={() => handleNavClick(link.label)} style={jakartaFont} className={`block py-2 text-[14px] font-semibold leading-none transition-colors duration-200 ${activeLink === link.label ? "text-[#e51676]" : "text-[#3f4b63] hover:text-[#e51676]"}`}>
@@ -56,7 +56,7 @@ const Navbar = () => {
               Sign In
             </button>
 
-            <button type="button" style={jakartaFont} className="brand-gradient-bg flex h-[38px] min-w-[92px] cursor-pointer items-center justify-center rounded-full border-0 px-5 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_22px_rgba(229,22,118,0.22)]">
+            <button type="button" style={jakartaFont} className="brand-gradient-bg flex h-9.5 min-w-23 cursor-pointer items-center justify-center rounded-full border-0 px-5 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_22px_rgba(229,22,118,0.22)]">
               Sign Up
             </button>
           </div>
@@ -69,12 +69,12 @@ const Navbar = () => {
           <div className="flex items-center justify-start">
             <button type="button" onClick={() => setIsMenuOpen((prev) => !prev)} className="flex h-8 w-8 cursor-pointer items-center justify-start border-0 bg-transparent p-0 text-[#726f70]" aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isMenuOpen} aria-controls="mobile-navigation">
               {isMenuOpen ? (
-                <svg viewBox="0 0 24 24" className="h-[22px] w-[22px]" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+                <svg viewBox="0 0 24 24" className="h-5.5 w-5.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
                   <path d="M5 5L19 19" />
                   <path d="M19 5L5 19" />
                 </svg>
               ) : (
-                <svg viewBox="0 0 32 32" className="h-[24px] w-[24px]" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                <svg viewBox="0 0 32 32" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                   <path d="M4 8H28" />
                   <path d="M4 16H28" />
                   <path d="M4 24H28" />
@@ -85,16 +85,16 @@ const Navbar = () => {
 
           {/* === Mobile Logo === */}
           <a href="#home" onClick={() => handleNavClick("Home")} className="flex items-center justify-center" aria-label="Dev Stack home">
-            <img src={logo} alt="Dev Stack" className="block h-auto w-[92px] object-contain max-[390px]:w-[86px] max-[350px]:w-[78px]" />
+            <img src={logo} alt="Dev Stack" className="block h-auto w-23 object-contain max-[390px]:w-21.5 max-[350px]:w-19.5" />
           </a>
 
           {/* === Mobile Auth === */}
-          <div className="flex items-center justify-end gap-[10px] max-[390px]:gap-[7px] max-[350px]:gap-[5px]">
+          <div className="flex items-center justify-end gap-2.5 max-[390px]:gap-1.75 max-[350px]:gap-1.25">
             <button type="button" style={jakartaFont} className="shrink-0 cursor-pointer border-0 bg-transparent p-0 text-[11px] font-semibold leading-none text-[#3b4252] transition-colors duration-200 hover:text-[#e51676] max-[350px]:text-[10px]">
               Sign In
             </button>
 
-            <button type="button" style={jakartaFont} className="brand-gradient-bg flex h-[30px] min-w-[62px] shrink-0 cursor-pointer items-center justify-center rounded-full border-0 px-[11px] text-[11px] font-semibold leading-none text-white transition-all duration-300 hover:shadow-[0_6px_16px_rgba(229,22,118,0.2)] max-[390px]:h-[29px] max-[390px]:min-w-[58px] max-[390px]:px-[9px] max-[390px]:text-[10px] max-[350px]:h-7 max-[350px]:min-w-[54px] max-[350px]:px-2">
+            <button type="button" style={jakartaFont} className="brand-gradient-bg flex h-7.5 min-w-15.5 shrink-0 cursor-pointer items-center justify-center rounded-full border-0 px-2.75 text-[11px] font-semibold leading-none text-white transition-all duration-300 hover:shadow-[0_6px_16px_rgba(229,22,118,0.2)] max-[390px]:h-7.25 max-[390px]:min-w-14.5 max-[390px]:px-2.25 max-[390px]:text-[10px] max-[350px]:h-7 max-[350px]:min-w-13.5 max-[350px]:px-2">
               Sign Up
             </button>
           </div>
@@ -102,12 +102,12 @@ const Navbar = () => {
       </nav>
 
       {/* ================= Mobile Menu ================= */}
-      <div id="mobile-navigation" className={`absolute left-0 top-full w-full overflow-hidden border-b border-[#edf0f4] bg-white shadow-[0_14px_30px_rgba(15,23,42,0.08)] transition-all duration-300 md:hidden ${isMenuOpen ? "visible max-h-[330px] translate-y-0 opacity-100" : "invisible max-h-0 -translate-y-2 opacity-0"}`}>
+      <div id="mobile-navigation" className={`absolute left-0 top-full w-full overflow-hidden border-b border-[#edf0f4] bg-white shadow-[0_14px_30px_rgba(15,23,42,0.08)] transition-all duration-300 md:hidden ${isMenuOpen ? "visible max-h-82.5 translate-y-0 opacity-100" : "invisible max-h-0 -translate-y-2 opacity-0"}`}>
         <div className="mx-auto px-3 py-2 sm:px-5">
           <ul className="flex flex-col">
             {navLinks.map((link) => (
               <li key={link.id}>
-                <a href={link.href} onClick={() => handleNavClick(link.label)} style={jakartaFont} className={`flex min-h-[44px] items-center border-b border-[#f1f2f4] text-[13px] font-semibold transition-colors duration-200 last:border-b-0 ${activeLink === link.label ? "text-[#e51676]" : "text-[#3f4b63] hover:text-[#e51676]"}`}>
+                <a href={link.href} onClick={() => handleNavClick(link.label)} style={jakartaFont} className={`flex min-h-11 items-center border-b border-[#f1f2f4] text-[13px] font-semibold transition-colors duration-200 last:border-b-0 ${activeLink === link.label ? "text-[#e51676]" : "text-[#3f4b63] hover:text-[#e51676]"}`}>
                   {link.label}
                 </a>
               </li>
