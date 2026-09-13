@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 <h1><img src="./public/favicon.svg" width="32" height="32" alt="Dev Stack Builder Logo" align="center" />Dev Stack Builder</h1>
+=======
+<h1>
+  <img src="./public/favicon.svg" width="42" height="42" alt="Dev Stack Builder Logo" align="absmiddle" />
+  &nbsp;Dev Stack Builder
+</h1>
+>>>>>>> b2073e8e5a2d888bd4a232649bd679c6a76c5b15
 
 Dev Stack Builder is a responsive React application that helps developers explore modern web technologies and build their preferred development stack.
 
