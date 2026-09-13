@@ -91,7 +91,7 @@ const Technologies = () => {
   };
 
   return (
-    <section id="technologies" className="bg-[#fbfcfe] py-14 sm:py-16 lg:py-17">
+    <section id="technologies" className="bg-[#fbfcfe] py-14 sm:py-16 lg:py-22 xl:py-22">
       <div className="mx-auto max-w-304 px-5 sm:px-6 xl:px-0">
 
         {/* ================== Section Heading ================== */}

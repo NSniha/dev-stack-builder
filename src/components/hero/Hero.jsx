@@ -15,7 +15,7 @@ const gradientTextStyle = {
 const Hero = () => {
   return (
     <section id="home" className="w-full overflow-hidden bg-white">
-      <div className="mx-auto grid max-w-304 grid-cols-1 items-center px-5 pt-13 pb-2 sm:px-6 sm:pt-11 sm:pb-6 md:pt-12 md:pb-8 lg:min-h-107.5 lg:grid-cols-[1.08fr_0.92fr] lg:gap-3 lg:px-6 lg:py-7 xl:min-h-110 xl:px-0 xl:py-7">
+      <div className="mx-auto grid max-w-304 grid-cols-1 items-center px-5 pt-13 pb-2 sm:px-6 sm:pt-11 sm:pb-6 md:pt-12 md:pb-8 lg:min-h-107.5 lg:grid-cols-[1.08fr_0.92fr] lg:gap-3 lg:px-6 lg:py-8 xl:min-h-110 xl:px-0 xl:py-8">
 
         {/* =============== Hero Content ===================== */}
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">

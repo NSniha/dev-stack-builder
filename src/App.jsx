@@ -3,6 +3,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
 import Technologies from "./components/technologies/Technologies";
+import Footer from "./components/layout/Footer";
 
 const ToastIcon = ({ type }) => {
   const iconStyles = {
@@ -46,6 +47,8 @@ const App = () => {
         <Technologies />
       </main>
 
+      <Footer />
+      
       <ToastContainer
         position="bottom-right"
         autoClose={2200}
