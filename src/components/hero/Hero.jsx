@@ -15,11 +15,11 @@ const gradientTextStyle = {
 const Hero = () => {
   return (
     <section id="home" className="w-full overflow-hidden bg-white">
-      <div className="mx-auto grid max-w-304 grid-cols-1 items-center px-5 pt-9 pb-2 sm:px-6 sm:pt-11 sm:pb-6 md:pt-12 md:pb-8 lg:min-h-107.5 lg:grid-cols-[1.08fr_0.92fr] lg:gap-3 lg:px-6 lg:py-7 xl:min-h-110 xl:px-0 xl:py-7">
+      <div className="mx-auto grid max-w-304 grid-cols-1 items-center px-5 pt-13 pb-2 sm:px-6 sm:pt-11 sm:pb-6 md:pt-12 md:pb-8 lg:min-h-107.5 lg:grid-cols-[1.08fr_0.92fr] lg:gap-3 lg:px-6 lg:py-7 xl:min-h-110 xl:px-0 xl:py-7">
 
         {/* =============== Hero Content ===================== */}
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-          <h1 style={jakartaFont} className="max-w-175 text-[35px] font-bold leading-[1.14] tracking-[-1.2px] text-[#10182c] sm:text-[46px] md:text-[54px] lg:text-[64px] lg:leading-[1.27] lg:tracking-[-2.5px] xl:text-[66px]">
+          <h1 style={jakartaFont} className="max-w-175 text-[34px] font-bold leading-[1.14] tracking-[-1.2px] text-[#10182c] sm:text-[46px] md:text-[54px] lg:text-[64px] lg:leading-[1.27] lg:tracking-[-2.5px] xl:text-[66px]">
             Build Smarter with
             <span style={gradientTextStyle} className="mt-0.75 block">
               The Right Tech Stack
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         {/* =============== Hero Image ================= */}
-        <div className="mt-1 flex w-full items-center justify-center sm:mt-2 md:mt-3 lg:mt-0 lg:justify-end">
+        <div className="mt-1 flex w-full items-center justify-center sm:mt-0 md:mt-3 lg:mt-0 lg:justify-end">
           <img src={heroImage} alt="Development technology stack illustration" className="block h-auto w-full max-w-78.75 object-contain sm:max-w-92.5 md:max-w-106.25 lg:max-w-125 xl:max-w-133.75" />
         </div>
 
