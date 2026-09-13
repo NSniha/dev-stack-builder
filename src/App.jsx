@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/Navbar";
+import Hero from "./components/hero/Hero";
 
 const App = () => {
   return (
@@ -6,11 +7,7 @@ const App = () => {
       <Navbar />
 
       <main>
-        <section id="home"></section>
-        <section id="technologies"></section>
-        <section id="projects"></section>
-        <section id="about"></section>
-        <section id="contact"></section>
+        <Hero />
       </main>
     </>
   );
