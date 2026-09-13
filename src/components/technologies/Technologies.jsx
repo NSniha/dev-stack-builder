@@ -31,7 +31,7 @@ const Technologies = () => {
         setError("");
 
         /* ================== Loading state demonstration ================== */
-        await new Promise((resolve) => setTimeout(resolve, 800));
+        await new Promise((resolve) => setTimeout(resolve, 600));
 
         const response = await fetch("/data/technologies.json");
 

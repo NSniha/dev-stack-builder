@@ -11,6 +11,10 @@ const StackSidebar = ({ selectedStack, onRemove, onRemoveAll }) => {
     color: "transparent",
   };
 
+  const jakartaFont = {
+    fontFamily: '"Plus Jakarta Sans", sans-serif',
+  };
+
   return (
     <aside className="card h-fit rounded-2xl border border-[#e4eaf1] bg-white shadow-[0_2px_8px_rgba(15,23,42,0.025)]">
       <div className="card-body p-5">
@@ -54,8 +58,8 @@ const StackSidebar = ({ selectedStack, onRemove, onRemoveAll }) => {
               ))}
             </div>
 
-            <button type="button" onClick={onRemoveAll} className="btn btn-outline mt-6 h-10.5 min-h-10.5 w-full rounded-lg border-[#ff9b9b] font-['Plus_Jakarta_Sans',sans-serif] text-[13px] font-semibold normal-case text-[#f04444] shadow-none hover:border-[#f04444] hover:bg-[#fff4f4] hover:text-[#dc2626]">
-              Remove All
+           <button type="button" onClick={onRemoveAll} style={jakartaFont} className="btn btn-outline mt-6 h-10.5 min-h-10.5 w-full rounded-lg border-[#ff9b9b] text-[13px] font-semibold normal-case text-[#f04444] shadow-none hover:border-[#f04444] hover:bg-[#fff4f4] hover:text-[#dc2626]">
+                Remove All
             </button>
           </>
         )}
